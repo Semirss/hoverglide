@@ -2,7 +2,7 @@ const cacheName = "SS-Production-Havoc Glide-0.1";
 const contentToCache = [
     "Build/036bd08001fbddeb9547e655e9ed8873.loader.js",
     "Build/84f62efbc354b71f13aea632d5f9553e.framework.js.unityweb",
-    "Build/9c794afc008202f8b84e3d342c9decad.data.unityweb",
+    "Build/9b102a3d6e7fc854a8b03a35797a3046.data.unityweb",
     "Build/36a0383c91dfb954f3972321ec3c0798.wasm.unityweb",
     "TemplateData/style.css"
 
