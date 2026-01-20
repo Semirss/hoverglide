@@ -7,45 +7,6 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="manifest" href="manifest.webmanifest">
-  <style>
-  #rotate-overlay {
-    position: fixed;
-    inset: 0;
-    background: #000;
-    color: #fff;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-    text-align: center;
-  }
-
-  .rotate-box {
-    font-size: 1.4rem;
-    opacity: 0.9;
-  }
-
-  @media (orientation: portrait) {
-    #rotate-overlay {
-      display: flex;
-    }
-
-    #unity-container {
-      display: none;
-    }
-  }
-
-  @media (orientation: landscape) {
-    #rotate-overlay {
-      display: none;
-    }
-
-    #unity-container {
-      display: block;
-    }
-  }
-</style>
-
   </head>
   <body>
     <div id="unity-container">
@@ -58,13 +19,6 @@
       </div>
       <div id="unity-warning"> </div>
     </div>
-    <div id="rotate-overlay">
-  <div class="rotate-box">
-    <p>Please rotate your phone</p>
-    <p>🔄 Landscape mode required</p>
-  </div>
-</div>
-
     <script>
       window.addEventListener("load", function () {
         if ("serviceWorker" in navigator) {
@@ -103,12 +57,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/9938238b2f9084480cd101c914faba2f.loader.js";
+      var loaderUrl = buildUrl + "/036bd08001fbddeb9547e655e9ed8873.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/15d79da1392ea0c532878853695eaa78.data.unityweb",
-        frameworkUrl: buildUrl + "/574b451eab7d56edd978fdb05cc477ec.framework.js.unityweb",
-        codeUrl: buildUrl + "/5e57784ec2baf2469fa600760121d676.wasm.unityweb",
+        dataUrl: buildUrl + "/9c794afc008202f8b84e3d342c9decad.data.unityweb",
+        frameworkUrl: buildUrl + "/84f62efbc354b71f13aea632d5f9553e.framework.js.unityweb",
+        codeUrl: buildUrl + "/36a0383c91dfb954f3972321ec3c0798.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "SS-Production",
         productName: "Havoc Glide",
