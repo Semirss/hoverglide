@@ -7,6 +7,45 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="manifest" href="manifest.webmanifest">
+  <style>
+  #rotate-overlay {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    color: #fff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    text-align: center;
+  }
+
+  .rotate-box {
+    font-size: 1.4rem;
+    opacity: 0.9;
+  }
+
+  @media (orientation: portrait) {
+    #rotate-overlay {
+      display: flex;
+    }
+
+    #unity-container {
+      display: none;
+    }
+  }
+
+  @media (orientation: landscape) {
+    #rotate-overlay {
+      display: none;
+    }
+
+    #unity-container {
+      display: block;
+    }
+  }
+</style>
+
   </head>
   <body>
     <div id="unity-container">
@@ -19,6 +58,13 @@
       </div>
       <div id="unity-warning"> </div>
     </div>
+    <div id="rotate-overlay">
+  <div class="rotate-box">
+    <p>Please rotate your phone</p>
+    <p>🔄 Landscape mode required</p>
+  </div>
+</div>
+
     <script>
       window.addEventListener("load", function () {
         if ("serviceWorker" in navigator) {
